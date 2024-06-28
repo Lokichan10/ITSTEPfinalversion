@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+* {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.upper {
+    transition: filter 0.3s ease;
+}
+
+    .upper:hover {
+        filter: brightness(50%);
+    }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px; 
+    user-select: none;
+}
+
+    label:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px; 
+        height: 30px; 
+        border: 2px solid #000;
+        border-radius: 3px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+
+input[type="checkbox"]:checked + label:before {
+    background-color: #222222;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.social-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-item {
+    margin: 10px 0;
+}
+
+    .social-item a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}

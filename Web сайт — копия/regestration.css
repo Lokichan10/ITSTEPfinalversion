@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+* {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.upper {
+    transition: filter 0.3s ease;
+}
+
+    .upper:hover {
+        filter: brightness(50%);
+    }
+/* Скрыть стандартный чекбокс */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Создать кастомный чекбокс */
+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px; /* Увеличение размера текста для увеличения размера чекбокса */
+    user-select: none;
+}
+
+    /* Стиль кастомного чекбокса */
+    label:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px; /* Увеличение размера чекбокса */
+        height: 30px; /* Увеличение размера чекбокса */
+        border: 2px solid #000;
+        border-radius: 3px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+/* Показать цвет при выборе чекбокса */
+input[type="checkbox"]:checked + label:before {
+    background-color: #222222;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.social-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-item {
+    margin: 10px 0;
+}
+
+    .social-item a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+
+.wobble {
+    animation: wobble 2s infinite;
+}
+
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
